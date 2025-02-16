@@ -1,7 +1,7 @@
 <template>
   <div :class="['app', darkMode ? 'dark' : '']">
     <!-- Global Header -->
-       <!-- Header Section -->
+    <!-- Header Section -->
     <header class="header">
       <h1 class="logo">Kedev<span class="logo-accent">Quiz</span></h1>
       <!-- <button @click="toggleDarkMode" class="dark-mode-toggle">
@@ -85,8 +85,30 @@ export default {
   color: #a970ff;
 }
 
-/* Ensure page content starts below the header */
 router-view {
   margin-top: 80px;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .home.dark .logo {
+    color: #fff;
+  }
+
+  .home.dark .logo-accent {
+    color: #a970ff;
+  }
+
+  router-view {
+    margin-top: 100px;
+  }
 }
 </style>
