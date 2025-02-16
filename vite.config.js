@@ -3,7 +3,8 @@ import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [vue()],
-  css: {
-    postcss: {},
+  base: "/",
+  server: {
+    historyApiFallback: true,  
   },
 });
