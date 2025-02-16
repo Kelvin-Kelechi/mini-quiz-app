@@ -4,19 +4,18 @@ This project is a quiz application built using Vue 3 and Vite. It supports both 
 
 ## Features
 
-- Dynamic quiz questions
+- Dynamic quiz questions (multiple-choice and drag-and-drop)
 - Drag-and-drop functionality for selecting answers
+- Multiple-choice questions with instant feedback (success/error messages)
 - Mobile-friendly touch interactions
-- Vue 3 Composition API with `<script setup>`
-- State management using Vuex/Pinia (if applicable)
-- Fast development with Vite
+- Score tracking and result display
 
 ## Installation
 
 Clone the repository:
 
 ```sh
-git clone https://github.com/your-repo/quiz-app.git
+git clone https://github.com/Kelvin-Kelechi/quiz-app.git
 ```
 
 Navigate to the project directory:
@@ -48,15 +47,8 @@ npm run dev
 - Vue 3
 - Vite
 - Vue Router
-- Vuex/Pinia (if applicable)
 - CSS for styling
 
-## Contribution
-
-Feel free to contribute by submitting issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License.
+ 
 
 # quiz-app
